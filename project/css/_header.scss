@@ -113,6 +113,9 @@ header{
 nav{
     background: #1B242F !important;
     border-bottom: 3px solid #04C2C9;
+    .fa-bars{
+        color: #FFF;
+    }
     ul{
         overflow: hidden;
         li{

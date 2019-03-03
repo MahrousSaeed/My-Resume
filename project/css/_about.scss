@@ -69,11 +69,16 @@
                 // font-weight: bold;
                 height: 26px;
                 font-size: 15px;
-                border-top-left-radius: 5px;
-                border-bottom-left-radius: 5px;
-                line-height: 26px
+                // border-top-left-radius: 5px;
+                // border-bottom-left-radius: 5px;
+                line-height: 26px;
+                @media(max-width:425px){
+                    font-size: 14px;
+                    width: 24%
+                }
             }
             .progress{
+                border-radius: 0;
                 border-top-left-radius: 0;
                 border-bottom-left-radius: 0;
                 margin-bottom: 8px;

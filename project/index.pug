@@ -29,7 +29,12 @@ html(lang="en")
                     button(class="scrollToWork") view my work <i class="fas fa-arrow-right"></i>
             .header_shadow
         nav(class="navbar navbar-expand-lg navbar-light")
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                //- <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
+            </button>
             div(class="collapse navbar-collapse" id="navbarSupportedContent")
+                
                 ul(class="navbar-nav mr-auto")
                     li(class="nav-item  active" , data-scroll="home")
                         a(class="nav-link" ) 
@@ -78,7 +83,7 @@ html(lang="en")
                         .profile-pic
                         h2(class="name") mahrous saied
                         p(class="decription") I'm computer science 2017 graduate, Iam Frontend developer for <span>Dawayer Studio</span> In Nacr City , loves javascript and any related to it, Learning every day is my task, I'm hungry to gain new experience every day.
-                    div(class=" col-sm-12 col-md-6 wow bounceInRight" ,data-wow-duration="1.5s", data-wow-offset="250")
+                    div(class=" col-sm-12 col-md-6 wow bounceInRight progress-contain" ,data-wow-duration="1.5s", data-wow-offset="250")
                                     
                         div.pro-cont
                             span Javascript
@@ -87,11 +92,11 @@ html(lang="en")
                         div.pro-cont
                             span Angular 5+
                             div(class="progress")
-                                div(class="progress-bar width0 bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")  80%  
+                                div(class="progress-bar width0 bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100")  85%  
                         div.pro-cont
                             span JQuery
                             div(class="progress")
-                                div(class="progress-bar width0 bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")  70%
+                                div(class="progress-bar width0 bg-danger" role="progressbar" style="width: 93%;" aria-valuenow="93" aria-valuemin="0" aria-valuemax="100")  93%
                         div.pro-cont
                             span Typescript
                             div(class="progress")
@@ -99,33 +104,33 @@ html(lang="en")
                         div.pro-cont
                             span Gulp.js
                             div(class="progress")
-                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100") 95%
+                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100") 65%
                         
                     
                         div.pro-cont
                             span PugJs
                             div(class="progress")
-                                div(class="progress-bar width0 bg-success" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100")  90%
+                                div(class="progress-bar width0 bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")  70%
                         div.pro-cont
                             span Html5
                             div(class="progress")
-                                div(class="progress-bar width0 bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")  80%  
+                                div(class="progress-bar width0 bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")  95%  
                         div.pro-cont
                             span Css3
                             div(class="progress")
-                                div(class="progress-bar width0 bg-danger" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")  70%
+                                div(class="progress-bar width0 bg-danger" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")  95%
                         div.pro-cont
                             span Git
                             div(class="progress")
-                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")  95%
+                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")  70%
                         div.pro-cont
                             span API
                             div(class="progress")
-                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")  95%
+                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100")  80%
                         div.pro-cont
                             span Photoshop
                             div(class="progress")
-                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100")  95%
+                                div(class="progress-bar width0 bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100")  50%
 
                     
         //- portfolio section
@@ -227,6 +232,15 @@ html(lang="en")
                                     span 2017
                             a(href="https://snow-js.netlify.com",target='_blank')
                                 button show details
+                    div(class="filtr-item" data-category="4" data-sort="value" , style="background-image:url(../images/mahrous-portfolio.jpg)") 
+                        //- img(src="images/snow.jpg", alt="")
+                        .layout
+                            .project-info
+                                h2 mahrous portfolio
+                                p Gulp.js , Sass , pug.js<br> 
+                                    span 2017
+                            a(href="https://mahrous.netlify.com",target='_blank')
+                                button show details
 
         section.contact
             .container
@@ -256,13 +270,13 @@ html(lang="en")
             .container
                 
                 .social-media
-                    a(href="#")
+                    a(href="https://www.facebook.com/profile.php?id=100006144315275" ,target='_blank')
                         .icon 
                             <i class="fab fa-facebook-f"></i>
-                    a(href="#")
+                    a(href="https://www.linkedin.com/in/mahrous-saeed-05989715b/",target='_blank')
                         .icon 
                             <i class="fab fa-linkedin-in"></i>
-                    a(href="#")
+                    a(href="https://github.com/MahrousSaeed",target='_blank')
                         .icon 
                             <i class="fab fa-github-alt"></i>
                 .copyright.text-center mahrous saied <span> &copy; 2018<span>

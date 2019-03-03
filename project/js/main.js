@@ -25,6 +25,7 @@ $(document).ready(function(){
             scrollTop:$('.' + $(this).attr('data-scroll')).offset().top - $('nav').innerHeight()
         },800)
         // console.log($(this).attr('data-scroll'));
+        $('.navbar-collapse').removeClass('show')
     })
 
     $(window).on("scroll",function(){
@@ -35,11 +36,19 @@ $(document).ready(function(){
         }
 
         // progress-bar .about .bottom
-        if($(window).scrollTop() >= $(".about .bottom").offset().top - 300){
-            $('.progress-bar').removeClass('width0')
+        if($(window).innerWidth() >= 768){
+            if($(window).scrollTop() >= $(".about .bottom").offset().top - 300){
+                console.log("sssss")
+                $('.progress-bar').removeClass('width0')
+            }
+        } else {
+            if($(window).scrollTop() >= $(".about .progress-contain").offset().top - 350){
+                $('.progress-bar').removeClass('width0')
+            }
         }
+       
         var pos = $(window).scrollTop();
-        var pos2 = pos + $('nav').innerHeight();
+        var pos2 = pos + $('nav').outerHeight();
         
     
         // Link Highlighting
@@ -66,29 +75,6 @@ $(document).ready(function(){
  
    
    
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        autoplay:true,
-        margin:10,
-        navText:['<i class="fas fa-angle-left"></i>','<i class="fas fa-angle-right"></i>'],
-        autoplayHoverPause:true,
-        responsiveClass:true,
-        responsive:{
-            0:{
-                items:1,
-                nav:true
-            },
-            600:{
-                items:2,
-                nav:true
-            },
-            1000:{
-                items:3,
-                nav:true,
-                loop:true
-            }
-        }
-    });
     
 
 })
